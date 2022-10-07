@@ -29,9 +29,9 @@ public class DiscreteDistribution {
 	  {
 	    int r = (int) (Math.random() * S[S.length-1]);
 	    int l = 0;
-	    while (l <= a.length)
+	    while (l < S.length)
 	    {
-	      if ((r<S[l]) && (r >= S[l-1]))
+	      if ((r < S[l]) && (r >= S[l-1]))
 	        System.out.print(l + " ");
 	      l++;
 	    }
